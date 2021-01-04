@@ -1,0 +1,68 @@
+
+h1 { 
+  font-family: "La Belle Aurore"; 
+  font-size: 82px; 
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: bold; 
+  line-height: 200px; 
+  color:rgb(255, 207, 185);
+  text-shadow: 4px 4px 12px #000000;
+} 
+
+h2 { 
+  font-family: "La Belle Aurore"; 
+  font-size: 48px; font-style: normal; 
+  font-variant: normal; 
+  font-weight: bold; 
+  line-height: 48px; 
+  text-align: center;
+  padding-top: 15px;
+}
+
+.nav-item {
+  color:black;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+}
+
+.navbar {
+  height:60px;
+  background-color: rgba(0, 0, 0, 0.7);
+  list-style-type: none;
+  text-align: center;
+
+}
+
+.nav ul {
+  display: inline-block;
+  margin: 0 auto;
+  padding-left: 0px;
+  padding-top: 10px;
+
+}
+
+.parallax {
+  background: url('../img/jellyfish.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.parallax-window {
+  min-height: 800px;
+  background: transparent;
+  background-size: cover;
+}
