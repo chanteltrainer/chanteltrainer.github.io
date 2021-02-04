@@ -19,15 +19,20 @@
 <body>
 
     <header>
-        <div class="parallax-window" data-parallax="scroll" data-image-src="img/volunteerParkConservatory_Film-square.jpg" data-speed=".75">
-            <div class="centered">
+        <div class="parallax-window" data-parallax="scroll" data-image-src="img/volunteer-park-conservatory_film.jpg" data-speed=".75">
+            <!-- <div class="centered">
                 <h1>Hello, I'm Chantel!</h1>
-            </div>
+            </div> -->
+
+
         </div>
 
     </header>
 
+    <h1>Hi, I'm Chantel!</h1>
+
     <nav class="navbar sticky-top justify-content-center navbar-light bg-light">
+        
         <ul class="nav justify-content-center">
             <li class="nav-item">
                 <a class="nav-link active" href="#about">About</a>
@@ -42,6 +47,7 @@
     </nav>
 
     <main>
+        
         <a class="jumplink" id="about">
             <h2>About Me</h2>
         </a>
@@ -52,11 +58,11 @@
             Hello! Thanks for visiting my site.
         </p>
         <p>
-            I'm Chantel, and I am a soon-to-be new graduate in Computer Science who loves to put a creative spin on things and learn at every opportunity.
+            I'm Chantel, a soon-to-be new graduate of a BS in Computer Science from University of Washington Tacoma. I love to put a creative spin on things and learn at every opportunity.
         </p>
         <p>
             Some of my accomplishments include Associate of the Quarter and Associate of the Month at Sysco Food Services, and a Certificate of Excellence in General Sciences at Highline College. I am currently studying Computer Science and Systems at University
-            of Washington Tacoma, graduating in Spring 2021.
+            of Washington Tacoma, graduating spring quarter of 2021.
         </p>
         <p>
             I am passionate about new experiences, whether it be a new project, traveling to a new place, trying a new food, or coding in a new language. I believe that it is new experiences that enrich life, inspire new ideas, and foster personal growth.
@@ -71,39 +77,89 @@
         <h2>Projects</h2>
         <h3>Mobile Chat Application</h3>
         <p>
-            Mauris nunc congue nisi vitae suscipit tellus. Orci nulla pellentesque dignissim enim. Congue nisi vitae suscipit tellus. Lectus urna duis convallis convallis tellus id interdum. Gravida rutrum quisque non tellus orci. Nunc congue nisi vitae suscipit
-            tellus mauris. Cras ornare arcu dui vivamus arcu felis bibendum ut tristique. Nisl nunc mi ipsum faucibus vitae aliquet nec. Quam lacus suspendisse faucibus interdum posuere. Eu tincidunt tortor aliquam nulla facilisi. Ipsum dolor sit amet
-            consectetur adipiscing. Elit at imperdiet dui accumsan sit amet nulla. Pretium nibh ipsum consequat nisl. Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Sodales neque sodales ut etiam sit. Erat imperdiet sed euismod
-            nisi. Quam nulla porttitor massa id neque aliquam vestibulum morbi blandit. Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Faucibus interdum posuere lorem ipsum.
-
-            <h3>Contact Tracing & Infectious Virus Tracking GUI & SQL Database</h3>
+            In this project, I worked in a group with 2 other students to build a multi-functional chat mobile application for Android that integrates with a PostgreSQL Database and a Web Service hosted on Heroku.
+            On the client side, I used Java in the Android Studio development environment.
+            On the server side, I used javascript with node.js to write the application's backend, and used SQL with the integrated database.
         </p>
-            This project was created to allow medical professionals to perform CRUD operations to a database. The database was built to store patient data, medical visit data, potential transmission events, possible contaminees, test results, symptoms, and prescriptions
-            into the database.
+        <p>The application includes the following functionality:</p>
+        <ul>
+            <li>Secure sign-in with jwt storing for the ability for user to remain logged in</li>
+            <li>Secure Registration process with email verification</li>
+            <li>Setting that allows user to change their color scheme live</li>
+            <li>Backend API:</li>
+            <ul>
+                <li>Handles secure sign-in and registration functionality</li>
+                <li>Upon registration of a new user, backend initiates an email verification process with NodeMailer.</li>
+                <li>Backend hooks into external weather API OpenWeatherMap to display weather data on the client-side.</li>
+                <li>Ability to detect device location to provide local weather information.</li>
+                <li>Uses Google Maps API to display a map widget to allow the user to select a location for weather data of that area.</li>
+                <li>Offers user ability to change their password, either within the app or as an external "forgot password" process.</li>
+                <li>Uses Pushy for instant notifications and visibility of new messages or contact requests.</li>
+                <li>Backend handles CRUD functionality for chat messages and contacts.</li>
+                <li>Ability to search for a person, send them a friend request, which can be approved or rejected by that user.</li>
+                <li>Offers user the ability to change their color scheme within the application.</li>
+            </ul>
+        </br>
+            <div class="scrolling-wrapper">
+                <div class="card"><a href="./img/chatapp-home.png"><img src="./img/chatapp-home.png" class="card-img" alt="Snailtails Chat App - Login Page"/></a></div>
+                <div class="card"><a href="./img/chatapp-chatroom-list.png"><img src="./img/chatapp-chatroom-list.png" class="card-img" alt="Snailtails Chat App - Chatroom List"/></a></div>
+                <div class="card"><a href="./img/chatapp-chatroom-add.png"><img src="./img/chatapp-chatroom-add.png" class="card-img" alt="Snailtails Chat App - Add Chatroom"/></a></div>
+                <div class="card"><a href="./img/chatapp-chatroom.png"><img src="./img/chatapp-chatroom.png" class="card-img" alt="Snailtails Chat App - Chatroom"/></a></div>
+                <div class="card"><a href="./img/chatapp-contact-add.png"><img src="./img/chatapp-contact-add.png" class="card-img" alt="Snailtails Chat App - Add Contact"/></a></div>
+                <div class="card"><a href="./img/chatapp-contact-requests.png"><img src="./img/chatapp-contact-requests.png" class="card-img" alt="Snailtails Chat App - Contact Request"/></a></div>
+                <div class="card"><a href="./img/chatapp-weather.png"><img src="./img/chatapp-weather.png" class="card-img" alt="Snailtails Chat App - Weather Page"/></a></div>
+                <div class="card"><a href="./img/chatapp-map.png"><img src="./img/chatapp-map.png" class="card-img" alt="Snailtails Chat App - Location Selection Map"/></a></div>
+              </div>
+
+              <hr>
+        </ul>
+            <h3>Contact Tracing & Infectious Virus Tracking GUI & SQL Database</h3>
+        <p>
+            This project was created to allow medical professionals to perform easily perform CRUD operations to a database using a client application. The database was built to store patient data, medical provider information, medical visit records, potential transmission events, possible contaminees, test results, patient-reported symptoms, and prescriptions.
         </p>
         <p>
-            The project consists of a rationalized mySQL database containing 16 tables and a graphical user interface created with Java.
+            The application consists of the client side graphical user interface (GUI) written in Java, and a rationalized mySQL database containing 16 different tables. Parameterized database queries were utilized to defend against SQL injection.
         </p>
-        <div class="imginline">
-            <a href="./img/proj-contact-tracer1.png"><img src="./img/proj-contact-tracer1.png" alt="Contact Tracer GUI Homepage" class="center"/></a>
-            <a href="./img/proj-contact-tracer2.png"><img src="./img/proj-contact-tracer2.png" alt="Contact Tracer New Patient Data Form Page" class="center"/></a>
-            <a href="./img/proj-contact-tracer3.png"><img src="./img/proj-contact-tracer3.png" alt="Contact Tracer Additional Patient Data Page" class="center"/></a>
+        <div class="scrolling-wrapper">
+            <div class="card"><a href="./img/proj-contact-tracer1.png"><img src="./img/proj-contact-tracer1.png" alt="Contact Tracer GUI Homepage" class="card-wide"/></a></div>
+            <div class="card"><a href="./img/proj-contact-tracer2.png"><img src="./img/proj-contact-tracer2.png" alt="Contact Tracer New Patient Data Form Page" class="card-wide"/></a></div>
+            <div class="card"><a href="./img/proj-contact-tracer3.png"><img src="./img/proj-contact-tracer3.png" alt="Contact Tracer Additional Patient Data Page" class="card-wide"/></a></div>
+            <div class="card"><a href="./img/sql-database.png"><img src="./img/sql-database.png" alt="Contact Tracer SQL Database Tables" class="card-wide"/></a></div>
         </div>
         <hr>
         <a id="contact"></a>
         <h2>Contact</h2>
+        <img src="./img/chantel-round.png" alt="Chantel" class="center"/></a>
         <p style="text-align: center;">
-            <a href="https://www.linkedin.com/in/chanteltrainer/">LinkedIn</a> | 
-            <a href="mailto:chantel.nicole@yahoo.com">chantel.nicole@yahoo.com</a>
+            I'd be happy to hear from you!
+            <br>
+            <br>
+            <a href="mailto:chantel.nicole@yahoo.com">ctrainer@uw.edu</a>
+            | <a href="https://www.linkedin.com/in/chanteltrainer/">LinkedIn</a>
+            | (208)201-7847 
             <hr>
         </p>
 
+        
 
     </main>
 
     <footer>
         <p style="text-align: center;">Copyright © Chantel Trainer 2020</p>
     </footer>
+
+    <script>
+        $( document ).ready(function() {
+            var windowHeight = $(window).height() * .65;
+            $('.card-img').css('height', windowHeight);
+
+            var wideCardWidth = $(window).width() * .75;
+            $('.card-wide').css('width', wideCardWidth);
+    
+        });
+          
+      </script>
+
 </body>
 
 </html>
